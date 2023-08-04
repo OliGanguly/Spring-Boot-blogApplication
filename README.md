@@ -15,7 +15,3 @@ spring core(DI), JPA, Spring MVC
 Spring Boot
 MySQL.
 
-Requirements of project
-1.user should create, delete , update post [POST]
-2.user can add comment,delete comment , update comment [COMMENT]
-3.Categories The post according to categories
