@@ -4,6 +4,32 @@ Dependency - spring - boot -starter -validation
 
 step1:ADD DEPENDENCY
 step2:ADD ANNOTATION IN BEANS
+like @NotEmpty @Size @Email @Pattern
 step3:Enable annotation from controller
+Handle Exception - MethodArgumentNotValidException
+Go to Global Exception
+create a method
+***************
+It should return a list with key value pair like
+"email":"Not valid",
+"password":"Not valid"
+so take a hashmap
+
+@ExceptionHandler(MethodArgumentNotValidException.class)
+public ResponseEntity<Map<S,S> handleException(MethodArgumentNotValidException ex){
+  //Blank map
+ Map<String,String> errors = new HashMap<>();
+//ex.getBindingResult().getAllErrors()-get a list of errors
+ex.getBindingResult.getAllErrors().forEach(err->{
+String FieldName= (FieldError(err)).getField();//typecast to field error
+String message = err.getDefaultMessage();
+errors.put(FieldError, message);
+})
+
+
+ return ResponseEntity<Map<S,S>>(errors,HttpStatus.Bad_Request)
+
+}
+
 
 
