@@ -1,0 +1,3 @@
+Bean validation:
+Hibernate validation is a implementation of Bean Vlidation Api
+Dependency - spring - boot -starter -validation
