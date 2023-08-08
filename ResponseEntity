@@ -1,0 +1,17 @@
+Return data + sstatus code = ResponseEntity [which will take two parameter data , statuscode]
+
+public ResponseEntity<List<Question>> getAllQuestion(){
+return new ResponseEntity<>(questionService.getAllQuestions,HttpStatus.OK)
+}
+we need to do that in service to handle Exception
+public ResponseEntity<List<Question>> getAllQuestions(){
+try{
+return new ResponseEntity<>(questionrepo.findall(),HttpStatus.OK);
+}
+catch(Exception e){
+e.printStackTrace();
+}
+return new ResponseEntity<>(new ArrayList<>() ,HttpStatus.BAD_REQUEST);
+}
+
+

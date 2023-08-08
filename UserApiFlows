@@ -1,0 +1,31 @@
+1.Entities
+  @Entity
+  @Table
+  User.java [ has all field ]
+2.paylods
+  @NoArgsConstructor
+  @Getter @Setter
+  UserDto.java [ Dto class of user class ]-use that class for data transfer
+  has all field User has.
+3.Service
+  Interface
+  Define all methods ,which will perform data base activity
+    public UserDto createUser(UserDto user);
+    public UserDto update(UserDto user,Integer userId);
+    public UserDto getUserById(Integer userId);
+    public List<UserDto> getAllUser();
+    void deleteUser(Integer userId);
+4.ServiceImpl 
+  Class will Override all methods of Service Interface
+  *UserToDto(User u) 
+  *DtoToUser(UserDto userdto)
+ will use ModelMapper [add dependency in pom.xml]
+ main class
+ @Bean
+	public ModelMapper ModelMapper() {
+		return new ModelMapper();
+	}
+5.Repo
+  UserRep extends JPARepository - will provide all methods for db operation
+
+
