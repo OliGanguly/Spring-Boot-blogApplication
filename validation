@@ -1,3 +1,9 @@
 Bean validation:
 Hibernate validation is a implementation of Bean Vlidation Api
 Dependency - spring - boot -starter -validation
+
+step1:ADD DEPENDENCY
+step2:ADD ANNOTATION IN BEANS
+step3:Enable annotation from controller
+
+
