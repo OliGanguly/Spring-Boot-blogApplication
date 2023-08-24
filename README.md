@@ -20,7 +20,7 @@ MySql
 - USER 
 - POST FK-{ userid } - one user many post
 - COMMENT FK-{ userid,postid} -one user many comment | one post many comment
-- CATEGORY FK-{ postid } - one category many post | many to many possible
+- CATEGORY FK-{ postid } - one category many post 
 
 ## What I build
 
