@@ -28,7 +28,7 @@ Client wants blogging application where he/she can write blogs and articles.
 - New User should be registered on our application
 - Existing user should be able to login
 
-## Architure
+## Architecture
  client -req-> Controller[ Api layer ] ->services [ Business Lyer ] ->Repository[Dao layer] -> Db
                
 
