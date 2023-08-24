@@ -1,17 +1,18 @@
-# Spring-Boot-blogApplication
-Creating Rest Endpoints
-Complex DB structure(JPA)
-Role based Authentication
-Handling Exception
-Using DTO for data Transfer
-Swagger
 
-How to add profiles for diff env?
-How to deploy in production
+## Documentation
 
-Technology I used
-Core java(oops,package,exception, lambda,stream api)
-spring core(DI), JPA, Spring MVC
-Spring Boot
-MySQL.
+Building real time Rest APIS for Blogging Application using 
+Spring Boot , Spring Security , JWT , Spring Data JPA ,
+MySql
+
+- Creating Rest Endpoints
+- Complex DB structure (JPA Entities)
+- Role Based Authentication
+- Exception Handling
+- Using DTO for Data Transfer
+- Swagger Implementation
+- Add profiles for different Env
+- Deploy in production
+
+
 
