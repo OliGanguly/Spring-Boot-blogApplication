@@ -14,6 +14,7 @@ MySql
 - Add profiles for different Env
 - Deploy in production
 
+* ER DIAGRAM
 ![ER-diagram](https://github.com/OliGanguly/Spring-Boot-blogApplication/assets/82031303/122564e8-701a-4d10-b689-bb3761736472)
 
 
