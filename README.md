@@ -17,6 +17,10 @@ MySql
 * ER DIAGRAM
 ![ER-diagram](https://github.com/OliGanguly/Spring-Boot-blogApplication/assets/82031303/122564e8-701a-4d10-b689-bb3761736472)
 
+USER 
+POST FK-{ userid } - one user many post
+COMMENT FK-{ userid,postid} -one user many comment | one post many comment
+CATEGORY FK-{ postid } - one category many post | many to many possible
 
 ## What I build
 
